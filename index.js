@@ -1,10 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateHtml = require('../src/generateHtml.js');
-const Employee = require('../lib/Employee.js');
+const generateHtml = require('./src/generateHtml.js');
+const Employee = require('./lib/Employee.js');
 const Manager = require('./lib/Manager.js');
+const Intern = require('./lib/Intern.js')
 
 const teamMem =[];
+
 
 function manager(){
     inquirer.prompt([
@@ -25,9 +27,9 @@ function manager(){
     }
     
 ]).then((ans) =>{
-        const myMgr = new Manager(name,id,eamil,officNumber);
-        teamMem.push(ans.myMgr);
-        console.log(ans.myMgr)
+        const myMgr = new Manager(ans.name,ans.id,ans.email,ans.officeNumber);
+        teamMem.push(myMgr);
+        console.log(teamMem)
         // instance of the manager
     //put it in the team array
 })
@@ -88,7 +90,7 @@ function intern(){
     }
     
 ]).then((ans) =>{
-    const myInt = new Intern(name,id,email,school);
+    const myInt = new Intern(ans.name,ans.id,ans.email,ans.school);
     teamMem.push(ans.myInt);
     // instance of the Intern
     //put it in the team array
@@ -99,3 +101,5 @@ function finish(){
     //fs write
     //console sucess or error
 }
+
+manager();
