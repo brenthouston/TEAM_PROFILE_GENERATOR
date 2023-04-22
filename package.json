@@ -5,17 +5,18 @@
   "main": "index.js",
   "directories": {
     "lib": "lib",
-    "test": "test"
+    "test": "tests"
   },
   "scripts": {
-    "test": "jest --verbose test/*"
+    "test": "jest --watch --verbose test/*"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
-  }
+    "jest": "^24.9.0"
+  },
+  "keywords": []
 }
