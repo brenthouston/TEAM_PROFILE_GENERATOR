@@ -31,11 +31,18 @@ h3{
     border: none;
 }
 
+.card:hover {
+    transform: scale(101%);
+}
 
 .text-center,
 .team-heading{
 background-color:#4480CF;
 color:#E7F0F0;
+}
+
+.team-heading{
+    border-bottom: 5px solid #1834d045;
 }
 
 .card-header
