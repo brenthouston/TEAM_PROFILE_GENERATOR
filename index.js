@@ -13,29 +13,36 @@ const teamMem =[];
 
 function manager(){
     inquirer.prompt([
-    {
-        type: 'input',
-        name: 'name',
-        message: 'What is the team managers name?',
-    },
-    {
-        type: 'input',
-        name: 'id',
-        message: 'What is the team managers id?',
-    },
-    {
-        type: 'input',
-        name: 'email',
-        message: 'What is the team managers email?',
-    }
-    
-]).then((ans) =>{
-        const myMgr = new Manager(ans.name,ans.id,ans.email,ans.officeNumber);
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the team managers name?',
+        },
+        {
+            type: 'input',
+            name: 'id',
+            message: 'What is the team managers id?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is the team managers email?',
+        },
+        {
+            type: 'input',
+            name: 'officenumber',
+            message: 'What is the team managers office number?',
+        }
+        
+    ]).then((ans) =>{
+        const myMgr = new Manager(ans.name,ans.id,ans.email,ans.officenumber);
         teamMem.push(myMgr);
+        
         menu();
-})
+    })
 }
-// another function that handles menu
+
+
 function menu(){
     
         inquirer.prompt([
@@ -91,6 +98,7 @@ function engineer(){
         ]).then((ans) =>{ 
             const myEng = new Engineer(ans.name,ans.id,ans.email,ans.github);
             teamMem.push(myEng);
+            
             menu();
             
         })
@@ -117,27 +125,32 @@ function intern(){
             {
                 type: 'input',
                 name: 'school',
-                message: 'What school is the Inter coming from?',
+                message: 'What school is this Intern coming from?',
             }
             
         ]).then((ans) =>{
             const myInt = new Intern(ans.name,ans.id,ans.email,ans.school);
             teamMem.push(myInt);
+            
             menu();
-            console.log(teamMem);
+            
             
         })
     }
     
     function finish(){
+       
         
-    fs.writeFile("index.html", generateHtml, (err) =>
-    err ? console.log(err) : console.log("Success your team has been built!")
+    fs.writeFile("index.html", generateHtml(teamMem), (err) =>
+    err ? console.log(err) : console.log("Success! Your team has been built!")
   );
 
         
        
     }
+
+    // function generatePage() {
+    //     const html = generateHtml(teamMem);
     
     manager();
     
