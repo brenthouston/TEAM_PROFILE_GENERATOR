@@ -1,7 +1,7 @@
 # TEAM PROFILE GERERATOR
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)   
 ## Description
-   This is an application that prompts you via node.js.  The prompts ask questions about your team and it auto populates a webpage with your information. I built this project to keep my manager and employees information in a convienent place. I used inquirer to handle prompting the user. I implemented test-driven development using jest. In completing this project I learned about instance inheritance, Polymorphism, .then promises, and recursive functions.
+   This is an application that prompts you via node.js.  The prompts ask questions about your team and it auto populates a webpage with your information. This project was built to quickly populate team information in an attractive demonstration. Inquirer was used to handle user prompting. I implemented test-driven development using jest. In completing this project I learned about instance inheritance, module exports, object Polymorphism, .then promises, and recursive functions.
 
 ## Table of contents
   * [Installation](#installation)
@@ -23,7 +23,7 @@
 * [License Link](https://opensource.org/license/mit/)
      
 ## Contributing
-  Reach out to me and we can start there.
+ Henry Weigand helped with some of the initial psuedo coding.
     
     
 ## Tests
