@@ -30,12 +30,12 @@ function manager(){
         },
         {
             type: 'input',
-            name: 'officenumber',
-            message: 'What is the team managers office number?',
+            name: 'office',
+            message: 'What is the team managers office number?'
         }
         
     ]).then((ans) =>{
-        const myMgr = new Manager(ans.name,ans.id,ans.email,ans.officenumber);
+        const myMgr = new Manager(ans.name,ans.id,ans.email,ans.office);
         teamMem.push(myMgr);
         
         menu();
@@ -149,8 +149,7 @@ function intern(){
        
     }
 
-    // function generatePage() {
-    //     const html = generateHtml(teamMem);
+
     
     manager();
     
