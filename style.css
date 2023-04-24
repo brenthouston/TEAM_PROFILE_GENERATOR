@@ -1,0 +1,75 @@
+
+
+*,
+body{
+   
+    flex-wrap: wrap;
+}
+h1{
+    color:#4480CF;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: "forma-djr-display", sans-serif;
+font-weight: 600;
+font-style: normal;
+    
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    color:#E7F0F0;
+}
+
+.card{
+    margin:15px;
+    box-shadow: 5px 5px 20px -5px rgb(84, 82, 82);
+    min-width:15rem;
+    border: none;
+}
+
+
+.text-center,
+.team-heading{
+background-color:#4480CF;
+color:#E7F0F0;
+}
+
+.card-header
+{
+    background: #4480CF;
+    color: #f3f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.203);
+    
+}
+.card-title,
+i
+{
+    text-align: end;
+    background-color: transparent;
+}
+
+.card-body{
+    background-color:  #f0f3f3;
+    
+    
+}
+
+
+
+.list-group-item{
+    background-color:  #f0f2f2;
+    
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item:last-child{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
