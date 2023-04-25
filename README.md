@@ -12,7 +12,7 @@
   * [Questions](#questions)
     
 ## Installation
-  Open the project in a code editor such as VS code. Then open the integrated terminal and type node index.js and that will invoke prompts to enumerate your team members then follow the prompts until you would like the page to be generated. Select "Finish building my team" and you application will compile your answers and make a webpage.
+  Open the project in a code editor such as VS code. Then open the integrated terminal and type node index.js and that will invoke prompts to enumerate your team members then follow the prompts until you would like the page to be generated. Select "Finish building my team" and the application will compile your answers and auto populate a webpage.  Enjoy!
     
 ## Usage
   I have a walk-through video linked below.
@@ -23,7 +23,7 @@
 * [License Link](https://opensource.org/license/mit/)
      
 ## Contributing
- Henry Weigand helped with some of the initial psuedo coding.
+ Henry Weigand helped get started and with some intial pseudo coding.
     
     
 ## Tests
